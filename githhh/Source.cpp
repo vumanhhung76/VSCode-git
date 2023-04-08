@@ -20,16 +20,17 @@ int giaiPT(float a, float b, float c, float& x1, float& x2) {
 }
 int main() {
 	float a, b, c;
-	float x1, x2;
+	// make conflict
+	int x1, x2;
 	do {
 		cout << "Nhap a (a!=0): ";
-		cin >> a;
-		cout << "Nhap b: ";
 		cin >> b;
+		cout << "Nhap b: ";
+		cin >> a;
 		cout << "Nhap c: ";
 		cin >> c;
 	} while (!a);
-	int numNo = giaiPT(a, b, c, x1, x2);
+	float numNo = giaiPT(a, b, c, x1, x2);
 	if (numNo == 0) {
 		cout << "Phuong trinh da cho vo nghiem";
 	}
@@ -38,8 +39,9 @@ int main() {
 	}
 	else {
 		cout << "Phuong trinh da cho co hai nghiem phan biet" << endl;
-		cout << "x1=" << x1 << endl;
-		cout << "x2=" << x2 << endl;
+		cout << "x1=" << x2 << endl;
+		cout << "x2=" << x1 << endl;
 	}
 }
 //comment update
+
