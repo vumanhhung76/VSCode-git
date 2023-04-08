@@ -40,7 +40,7 @@ int main() {
 	else {
 		cout << "Phuong trinh da cho co hai nghiem phan biet" << endl;
 		cout << "x1=" << x2 << endl;
-		cout << "x2=" << x1 << endl;
+		cout << "x2=" << x3;
 	}
 }
 //comment update
