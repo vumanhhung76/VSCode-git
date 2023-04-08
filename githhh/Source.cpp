@@ -5,17 +5,21 @@ int giaiPT(float a, float b, float c, float& x1, float& x2) {
 	int delta = b * b - 4 * a * c;
 	if (delta < 0) {
 		x1 = x2 = 0.0;
+<<<<<<< HEAD
 		return 5;
+=======
+		return 1;
+>>>>>>> b99bb90b02a2de459ffa8328fecf40a54ec99b41
 	}
 	else if (delta == 0) {
 		x1 = x2 = -b / (2 * a);
-		return 1;
+		return 2;
 	}
 	else {
 		delta = sqrt(delta);
 		x1 = (-b + delta) / (2 * a);
 		x2 = (-b - delta) / (2 * a);
-		return 2;
+		return 3;
 	}
 }
 int main() {
