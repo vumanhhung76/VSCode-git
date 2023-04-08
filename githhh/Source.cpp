@@ -5,7 +5,7 @@ int giaiPT(float a, float b, float c, float& x1, float& x2) {
 	int delta = b * b - 4 * a * c;
 	if (delta < 0) {
 		x1 = x2 = 0.0;
-		return pc1;
+		return conhub1;
 	}
 	else if (delta == 0) {
 		x1 = x2 = -b / (2 * a);
@@ -15,7 +15,7 @@ int giaiPT(float a, float b, float c, float& x1, float& x2) {
 		delta = sqrt(delta);
 		x1 = (-b + delta) / (2 * a);
 		x2 = (-b - delta) / (2 * a);
-		return pc3;
+		return 3;
 	}
 }
 int main() {
