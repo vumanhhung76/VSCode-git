@@ -35,7 +35,7 @@ int main() {
 		cout << "Phuong trinh da cho vo nghiem";
 	}
 	else if (numNo == 1) {
-		cout << "Phuong trinh da cho co nghiem kep x=%.4f" << x1;
+		cout << "Phuong trinh da cho co nghiem kep x=%.4f" << x2;
 	}
 	else {
 		cout << "Phuong trinh da cho co hai nghiem phan biet" << endl;
