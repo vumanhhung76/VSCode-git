@@ -2,10 +2,10 @@
 #include<math.h>
 using namespace std;
 int giaiPT(float a, float b, float c, float& x1, float& x2) {
-	float delta = b * b - 4 * a * c;
+	int delta = b * b - 4 * a * c;
 	if (delta < 0) {
 		x1 = x2 = 0.0;
-		return 4;
+		return 5;
 	}
 	else if (delta == 0) {
 		x1 = x2 = -b / (2 * a);
