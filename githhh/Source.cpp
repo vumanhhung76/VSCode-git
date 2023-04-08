@@ -5,11 +5,11 @@ int giaiPT(float a, float b, float c, float& x1, float& x2) {
 	int delta = b * b - 4 * a * c;
 	if (delta < 0) {
 		x1 = x2 = 0.0;
-		return github2;
+		return conhub1;
 	}
 	else if (delta == 0) {
 		x1 = x2 = -b / (2 * a);
-		return 2;
+		return conhub2;
 	}
 	else {
 		delta = sqrt(delta);
